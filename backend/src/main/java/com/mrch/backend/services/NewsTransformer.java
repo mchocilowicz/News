@@ -11,20 +11,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Service
 public class NewsTransformer {
 
-    public NewsDTO toNew(NewsResponse response, String country, String category) {
+    public NewsDTO toNewsDTO(NewsResponse response, String country, String category) {
         List<ArticleDTO> articles = response.getArticles()
                 .stream()
-                .map(this::toArticle)
+                .map(this::toArticleDTO)
                 .collect(Collectors.toList());
         return new NewsDTO(country, category, articles);
     }
 
-    public ArticleDTO toArticle(ArticleResponse articleResponse) {
+    public ArticleDTO toArticleDTO(ArticleResponse articleResponse) {
         ArticleDTO articleDTO = new ArticleDTO();
         articleDTO.setAuthor(articleResponse.getAuthor());
         articleDTO.setDescription(articleResponse.getDescription());
