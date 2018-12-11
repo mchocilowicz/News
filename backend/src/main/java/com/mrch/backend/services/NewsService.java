@@ -1,6 +1,8 @@
 package com.mrch.backend.services;
 
-import com.mrch.backend.models.NewsResponse;
+import com.mrch.backend.models.NewsDTO;
+import com.mrch.backend.models.responses.NewsResponse;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -13,8 +15,10 @@ public class NewsService {
     @Value("${newsapi.key}")
     private String key;
 
+    @Autowired
+    NewsTransformer newsTransformer;
 
-    public NewsResponse getNewsByCountryCategory(String country, String category) {
+    public NewsDTO getNewsByCountryCategory(String country, String category) {
         UriComponents uriComponents = UriComponentsBuilder.newInstance()
                 .scheme("https")
                 .host("newsapi.org/v2/top-headlines")
@@ -24,6 +28,6 @@ public class NewsService {
                 .build();
         RestTemplate rest = new RestTemplate();
         NewsResponse response = rest.getForObject(uriComponents.toUriString(), NewsResponse.class);
-        return response;
+        return newsTransformer.toNew(response, country, category);
     }
 }

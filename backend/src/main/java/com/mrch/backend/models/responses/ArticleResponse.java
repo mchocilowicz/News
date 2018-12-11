@@ -1,44 +1,13 @@
-package com.mrch.backend.models;
+package com.mrch.backend.models.responses;
 
 import java.io.Serializable;
-import java.util.List;
 
-public class NewsResponse implements Serializable {
-    private String status;
-    private Integer totalResults;
-    private List<Articles> articles;
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public Integer getTotalResults() {
-        return totalResults;
-    }
-
-    public void setTotalResults(Integer totalResults) {
-        this.totalResults = totalResults;
-    }
-
-    public List<Articles> getArticles() {
-        return articles;
-    }
-
-    public void setArticles(List<Articles> articles) {
-        this.articles = articles;
-    }
-}
-
-class Articles implements Serializable{
-    public Source getSource() {
+public class ArticleResponse implements Serializable {
+    public SourceResponse getSource() {
         return source;
     }
 
-    public void setSource(Source source) {
+    public void setSource(SourceResponse source) {
         this.source = source;
     }
 
@@ -98,33 +67,12 @@ class Articles implements Serializable{
         this.content = content;
     }
 
-    private Source source;
+    private SourceResponse source;
     private String author;
     private String title;
     private String description;
+    private String publishedAt;
     private String url;
     private String urlToImage;
-    private String publishedAt;
     private String content;
-}
-
-class Source implements Serializable {
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    private String id;
-    private String name;
 }
