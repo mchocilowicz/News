@@ -13,6 +13,9 @@ public class NewsDTO {
         this.articles = articles;
     }
 
+    public NewsDTO() {
+    }
+
     public String getCountry() {
         return country;
     }
