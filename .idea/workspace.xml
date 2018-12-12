@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2174ec5a-614e-4584-a9cd-a8c4c8e277ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/impl/NewsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/controllers/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/controllers/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/backend/target/" />
     <ignored path="$PROJECT_DIR$/frontend/target/" />
@@ -21,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/controllers/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="315">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsTransformer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="150">
               <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/impl/NewsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="435">
               <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -57,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/config/SwaggerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+            <state relative-caret-position="450">
+              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/models/NewsDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
+            <state relative-caret-position="60">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
@@ -82,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -113,13 +108,13 @@
         <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/models/New.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/models/NewsDTO.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/models/ArticleDTO.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/controllers/NewsController.java" />
         <option value="$PROJECT_DIR$/backend/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsServiceImpl.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsService.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsTransformer.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/impl/NewsServiceImpl.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/controllers/NewsController.java" />
       </list>
     </option>
   </component>
@@ -159,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,6 +202,16 @@
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="News" type="b2602c69:ProjectViewProjectNode" />
+              <item name="News" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -220,6 +224,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,7 +234,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544561098843" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544561193097" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -303,12 +308,13 @@
       <option name="presentableId" value="Default" />
       <updated>1544546669880</updated>
       <workItem from="1544546672464" duration="5245000" />
-      <workItem from="1544556633702" duration="4183000" />
+      <workItem from="1544556633702" duration="4384000" />
+      <workItem from="1544636928056" duration="248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9428000" />
+    <option name="totallyTimeSpent" value="9877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="40" width="1400" height="757" extended-state="0" />
@@ -487,40 +493,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/controllers/NewsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/impl/NewsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/models/NewsDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsTransformer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
+        <state relative-caret-position="150">
           <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -530,7 +505,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/impl/NewsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="435">
           <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -538,10 +513,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/models/NewsDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/services/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/config/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+        <state relative-caret-position="450">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/mrch/backend/controllers/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
