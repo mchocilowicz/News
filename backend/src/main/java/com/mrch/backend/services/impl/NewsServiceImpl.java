@@ -29,7 +29,7 @@ public class NewsServiceImpl implements NewsService {
     NewsTransformer newsTransformer;
 
     public NewsDTO getNewsByCountryCategory(String country, String category) {
-        if(!isNumeric(country) && !isNumeric(category)) {
+        if(isNumeric(country) || isNumeric(category)) {
             return new NewsDTO();
         }
         UriComponents uriComponent = UriComponentsBuilder.newInstance()

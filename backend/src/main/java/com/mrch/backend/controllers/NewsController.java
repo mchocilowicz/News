@@ -17,13 +17,13 @@ public class NewsController {
     @ApiOperation(value = "Get News by country and category", response = NewsDTO.class)
     @GetMapping("/{country}/{category}")
     public NewsDTO getNews(@PathVariable("country") String country, @PathVariable("category") String category) {
-        return newsService.getNewsByCountryCategory(country,category);
+        return newsService.getNewsByCountryCategory(country, category);
     }
 
     @GetMapping("/search")
     @ApiOperation(value = "Get news for search query", response = NewsDTO.class)
-    @ApiParam("q")
-    public NewsDTO getSearchResult(@RequestParam("q") String query) {
+    public NewsDTO getSearchResult(@ApiParam(value = "query to search news", required = true)
+                                   @RequestParam("q") String query) {
         return newsService.getNewsForQuery(query);
     }
 }
