@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {ActivatedRoute, RouterLinkActive} from '@angular/router';
 
@@ -9,23 +9,34 @@ import {ActivatedRoute, RouterLinkActive} from '@angular/router';
 })
 export class NewsComponent implements OnInit {
 
-  readonly DEFAULT_CATEGORY = 'technology';
   readonly DEFAULT_COUNTRY = 'pl';
 
-  newsList: any[];
+  news: INews;
 
   constructor(private http: HttpClient, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.route.paramMap.subscribe( params => {
-      const name = params.get('name');
-      if (name) {
-        this.http.get(`/news/${this.DEFAULT_COUNTRY}/${name}`).subscribe(data => console.log(data));
-      } else {
-        this.http.get(`/news/${this.DEFAULT_COUNTRY}/${this.DEFAULT_CATEGORY}`).subscribe(data => console.log(data));
-      }
+    this.route.url.subscribe(v => {
+      this.http.get(`/news/${this.DEFAULT_COUNTRY}/${v[0].path}`).subscribe((data: INews) => {
+        this.news = data;
+      });
     });
   }
+}
 
+interface INews {
+  country: string;
+  category: string;
+  articles: Array<IArticle>;
+}
+
+interface IArticle {
+  author: string;
+  title: string;
+  description: string;
+  date: string;
+  sourceName: string;
+  articleUrl: string;
+  imageUrl: string;
 }
