@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {ActivatedRoute, RouterLinkActive} from '@angular/router';
+import {INews} from '../../models/news.interface';
+import {NewsService} from '../../services/news.service';
 
 @Component({
   selector: 'app-news',
@@ -9,34 +11,16 @@ import {ActivatedRoute, RouterLinkActive} from '@angular/router';
 })
 export class NewsComponent implements OnInit {
 
-  readonly DEFAULT_COUNTRY = 'pl';
-
   news: INews;
 
-  constructor(private http: HttpClient, private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private newsService: NewsService) {
   }
 
   ngOnInit() {
     this.route.url.subscribe(v => {
-      this.http.get(`/news/${this.DEFAULT_COUNTRY}/${v[0].path}`).subscribe((data: INews) => {
-        this.news = data;
+      this.newsService.getNews(v[0].path).subscribe(news => {
+        this.news = news;
       });
     });
   }
-}
-
-interface INews {
-  country: string;
-  category: string;
-  articles: Array<IArticle>;
-}
-
-interface IArticle {
-  author: string;
-  title: string;
-  description: string;
-  date: string;
-  sourceName: string;
-  articleUrl: string;
-  imageUrl: string;
 }

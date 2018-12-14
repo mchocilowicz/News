@@ -1,3 +1,32 @@
-<p>
-  search works!
-</p>
+<div class="container">
+  <div class="form-group">
+    <input type="text"
+           (input)="onValueChange($event.target.value)"
+           class="form-control"
+           placeholder="Search articles">
+  </div>
+
+  <div class="d-flex flex-wrap justify-content-between" *ngIf="news">
+    <div class="card" style="width: 18rem;"
+         *ngFor="let article of news.articles">
+      <img class="card-img-top"
+           [src]="article.imageUrl"
+           [alt]="article.title">
+      <div class="card-body">
+        <h5 class="card-title">
+          {{article.title}}
+        </h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          {{article.author}} - {{article.date}}
+        </h6>
+        <p class="card-text">
+          {{article.description}}
+        </p>
+        <a [href]="article.articleUrl"
+           class="btn btn-primary">
+          Go {{article.sourceName}}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

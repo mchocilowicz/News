@@ -12,7 +12,8 @@ export const environment = {
     'health',
     'science',
     'sports',
-  ]
+  ],
+  country: 'pl'
 };
 
 /*
