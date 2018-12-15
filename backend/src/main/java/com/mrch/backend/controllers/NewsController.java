@@ -21,7 +21,7 @@ public class NewsController {
     }
 
     @GetMapping("/{country}")
-    @ApiOperation(value = "Get news for search query", response = NewsDTO.class)
+    @ApiOperation(value = "Get news in country by query", response = NewsDTO.class)
     public NewsDTO getSearchResult(@PathVariable("country") String country,
                                    @ApiParam(value = "query to search news", required = true)
                                    @RequestParam("q") String query) {

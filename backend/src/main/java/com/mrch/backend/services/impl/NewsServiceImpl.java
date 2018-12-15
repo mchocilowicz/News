@@ -42,6 +42,9 @@ public class NewsServiceImpl implements NewsService {
 
     @Override
     public NewsDTO getNewsByConuntryAndQuery(String country, String query) {
+        if(isNumeric(country) || query.isEmpty()) {
+            return new NewsDTO();
+        }
         UriComponents uriComponent = UriComponentsBuilder.newInstance()
                 .scheme(scheme)
                 .host(host)
