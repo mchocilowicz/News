@@ -4,5 +4,5 @@ import com.mrch.backend.models.NewsDTO;
 
 public interface NewsService {
     NewsDTO getNewsByCountryCategory(String country, String category);
-    NewsDTO getNewsForQuery(String query);
+    NewsDTO getNewsByConuntryAndQuery(String country, String query);
 }

@@ -20,10 +20,11 @@ public class NewsController {
         return newsService.getNewsByCountryCategory(country, category);
     }
 
-    @GetMapping("/search")
+    @GetMapping("/{country}")
     @ApiOperation(value = "Get news for search query", response = NewsDTO.class)
-    public NewsDTO getSearchResult(@ApiParam(value = "query to search news", required = true)
+    public NewsDTO getSearchResult(@PathVariable("country") String country,
+                                   @ApiParam(value = "query to search news", required = true)
                                    @RequestParam("q") String query) {
-        return newsService.getNewsForQuery(query);
+        return newsService.getNewsByConuntryAndQuery(country, query);
     }
 }

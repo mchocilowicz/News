@@ -7,8 +7,6 @@ import com.mrch.backend.services.NewsTransformer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpClientErrorException.BadRequest;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -43,10 +41,11 @@ public class NewsServiceImpl implements NewsService {
     }
 
     @Override
-    public NewsDTO getNewsForQuery(String query) {
+    public NewsDTO getNewsByConuntryAndQuery(String country, String query) {
         UriComponents uriComponent = UriComponentsBuilder.newInstance()
                 .scheme(scheme)
                 .host(host)
+                .queryParam("country", country)
                 .queryParam("q", query)
                 .queryParam("apikey", key).build();
         return getResponse(uriComponent.toUriString(), null, null);
